@@ -54,7 +54,7 @@ class RpcServer extends Command
             $pFactory = new TBinaryProtocolFactory(true, true);
             $processor = new TMultiplexedProcessor();
             // 注册服务
-            $processor->registerProcessor('thriftCommonCallService1', $thriftProcessor);
+            $processor->registerProcessor('thriftCommonCallService', $thriftProcessor);
 
             // 监听开始
             $transport = new TServerSocket('127.0.0.1', 9999);
