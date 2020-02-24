@@ -1,0 +1,37 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Task Resource OpenApi",
+        "contact": {
+            "name": "laravel脚手架",
+            "url": "http://xxx.cn",
+            "email": "zz.fu@ccahouse.org"
+        },
+        "version": "1.0.0"
+    },
+    "servers": [
+        {
+            "url": "http://xxx.cn/api/v1"
+        }
+    ],
+    "paths": {
+        "/test": {
+            "get": {
+                "tags": [
+                    "测试"
+                ],
+                "operationId": "app\\Http\\Controllers\\Api\\V1\\TestController::test",
+                "responses": {
+                    "200": {
+                        "description": "result"
+                    }
+                },
+                "security": [
+                    {
+                        "passport": []
+                    }
+                ]
+            }
+        }
+    }
+}
